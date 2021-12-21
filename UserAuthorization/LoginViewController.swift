@@ -24,19 +24,26 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        guard
+            let welcomeVC = segue.destination as? WelcomeViewController
+        else { return }
         welcomeVC.welcome = "Welcome, \(userNameTF.text ?? "")!"
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    override func shouldPerformSegue(
+        withIdentifier identifier: String,
+        sender: Any?
+    ) -> Bool {
         if userNameTF.text != "User" || passwordTF.text != "Password" {
             showAlert(
                 title: "Invalid login or password",
                 message: "Please, enter correct login and password!"
             )
+            
             passwordTF.text = ""
             return false
         }
+        
         return true
     }
     
@@ -72,10 +79,14 @@ extension LoginViewController: UITextFieldDelegate {
         if textField == userNameTF {
             passwordTF.becomeFirstResponder()
         } else if textField == passwordTF {
-            if shouldPerformSegue(withIdentifier: "", sender: self) {
-                performSegue(withIdentifier: "", sender: self)
-            }
+            onTapDoneButton()
         }
         return false
+    }
+    
+    private func onTapDoneButton() {
+        if shouldPerformSegue(withIdentifier: "", sender: self) {
+            performSegue(withIdentifier: "", sender: self)
+        }
     }
 }
