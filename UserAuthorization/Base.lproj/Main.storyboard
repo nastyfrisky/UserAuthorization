@@ -51,7 +51,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="B4r-Gl-Nra" kind="show" id="c5h-9q-E1L"/>
+                                            <segue destination="B4r-Gl-Nra" kind="show" identifier="" id="c5h-9q-E1L"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="cc9-Xy-S09">
