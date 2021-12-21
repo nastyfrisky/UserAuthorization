@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		4D1C77EC2770F9D70013B1F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C77EB2770F9D70013B1F5 /* AppDelegate.swift */; };
 		4D1C77EE2770F9D70013B1F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C77ED2770F9D70013B1F5 /* SceneDelegate.swift */; };
-		4D1C77F02770F9D70013B1F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C77EF2770F9D70013B1F5 /* ViewController.swift */; };
+		4D1C77F02770F9D70013B1F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C77EF2770F9D70013B1F5 /* LoginViewController.swift */; };
 		4D1C77F32770F9D70013B1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1C77F12770F9D70013B1F5 /* Main.storyboard */; };
 		4D1C77F52770F9D70013B1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1C77F42770F9D70013B1F5 /* Assets.xcassets */; };
 		4D1C77F82770F9D70013B1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1C77F62770F9D70013B1F5 /* LaunchScreen.storyboard */; };
+		4D1C78002771DDFE0013B1F5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C77FF2771DDFE0013B1F5 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D1C77E82770F9D70013B1F5 /* UserAuthorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserAuthorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1C77EB2770F9D70013B1F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1C77ED2770F9D70013B1F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D1C77EF2770F9D70013B1F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D1C77EF2770F9D70013B1F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D1C77F22770F9D70013B1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D1C77F42770F9D70013B1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D1C77F72770F9D70013B1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D1C77F92770F9D70013B1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1C77FF2771DDFE0013B1F5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				4D1C77EB2770F9D70013B1F5 /* AppDelegate.swift */,
 				4D1C77ED2770F9D70013B1F5 /* SceneDelegate.swift */,
-				4D1C77EF2770F9D70013B1F5 /* ViewController.swift */,
+				4D1C77FF2771DDFE0013B1F5 /* WelcomeViewController.swift */,
+				4D1C77EF2770F9D70013B1F5 /* LoginViewController.swift */,
 				4D1C77F12770F9D70013B1F5 /* Main.storyboard */,
 				4D1C77F42770F9D70013B1F5 /* Assets.xcassets */,
 				4D1C77F62770F9D70013B1F5 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D1C77F02770F9D70013B1F5 /* ViewController.swift in Sources */,
+				4D1C77F02770F9D70013B1F5 /* LoginViewController.swift in Sources */,
+				4D1C78002771DDFE0013B1F5 /* WelcomeViewController.swift in Sources */,
 				4D1C77EC2770F9D70013B1F5 /* AppDelegate.swift in Sources */,
 				4D1C77EE2770F9D70013B1F5 /* SceneDelegate.swift in Sources */,
 			);

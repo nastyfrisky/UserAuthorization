@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
                 title: "Invalid login or password",
                 message: "Please, enter correct login and password!"
             )
+            passwordTF.text = ""
             return false
         }
         return true
@@ -42,10 +43,6 @@ class LoginViewController: UIViewController {
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""
-    }
-
-    @IBAction func onTapLogin() {
-        
     }
     
     @IBAction func onTapForgotUsername() {
@@ -69,3 +66,16 @@ class LoginViewController: UIViewController {
     }
 }
 
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTF {
+            passwordTF.becomeFirstResponder()
+        } else if textField == passwordTF {
+            if shouldPerformSegue(withIdentifier: "", sender: self) {
+                performSegue(withIdentifier: "", sender: self)
+            }
+        }
+        return false
+    }
+}
