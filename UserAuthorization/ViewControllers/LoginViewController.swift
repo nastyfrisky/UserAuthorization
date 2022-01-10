@@ -30,15 +30,19 @@ class LoginViewController: UIViewController {
             let tabbarVC = segue.destination as? UITabBarController,
             let firstVC = tabbarVC.viewControllers?.first,
             let welcomeVC = firstVC as? WelcomeViewController,
-            let navigationVC = tabbarVC.viewControllers?.last as? UINavigationController,
-            let secondVC = navigationVC.topViewController as? AboutMeViewController
+            let lastVC = tabbarVC.viewControllers?.last,
+            let navigationVC = lastVC as? UINavigationController,
+            let topVC = navigationVC.topViewController,
+            let aboutMeVC = topVC as? AboutMeViewController
         else { return }
         welcomeVC.welcome = """
         Welcome, \(user.person.name) \(user.person.surname)!
         """
-        secondVC.biography = user.person.biography
-        secondVC.image = user.person.image
-        secondVC.navigationItem.title = "\(user.person.name) \(user.person.surname)"
+        aboutMeVC.biography = user.person.biography
+        aboutMeVC.image = user.person.image
+        aboutMeVC.navigationItem.title = """
+        \(user.person.name) \(user.person.surname)
+        """
     }
     
     override func shouldPerformSegue(

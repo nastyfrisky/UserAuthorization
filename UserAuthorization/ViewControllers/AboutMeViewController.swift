@@ -14,7 +14,8 @@ class AboutMeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard
-            let moreAboutMeVC = segue.destination as? MoreInfoAboutMeViewController
+            let moreAboutMeVC = segue.destination
+                as? MoreInfoAboutMeViewController
         else { return }
         moreAboutMeVC.biography = biography
         moreAboutMeVC.image = image
